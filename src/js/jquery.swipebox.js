@@ -18,7 +18,12 @@
 				afterOpen: null,
 				afterClose: null,
 				loopAtEnd: false,
-				autoplayVideos: false
+				autoplayVideos: false,
+				ytControls: 1,				// Whether the video player controls will display (3 options: 2 [default], 1 and 0)
+				ytShowInfo: 1,              // shows or hides the video title
+				ytAutoHide: 2,              // auto-hides the progress and player controls (3 options: 2, 1 [default] and 0)
+				ytModestBranding: 0,        // shows or hides the youtube logo
+				ytRel: 1                    // Shows or hides related videos
 			},
 
 			plugin = this,
@@ -739,7 +744,7 @@
 					if ( youtubeShortUrl ) {
 						youtubeUrl = youtubeShortUrl;
 					}
-					iframe = '<iframe width="560" height="315" src="//www.youtube.com/embed/' + youtubeUrl[1] + '?autoplay='+ plugin.settings.autoplayVideos + '" frameborder="0" allowfullscreen></iframe>';
+					iframe = '<iframe width="560" height="315" src="//www.youtube.com/embed/' + youtubeUrl[1] + '?autoplay='+ plugin.settings.autoplayVideos + '&amp;controls='+ plugin.settings.ytControls + '&amp;showinfo='+ plugin.settings.ytShowInfo + '&amp;autohide='+ plugin.settings.ytAutoHide + '&amp;modestbranding='+ plugin.settings.ytModestBranding + '&amp;rel='+ plugin.settings.ytRel + '" frameborder="0" allowfullscreen></iframe>';
 
 				} else if ( vimeoUrl ) {
 

@@ -19,7 +19,7 @@
 				afterClose: null,
 				loopAtEnd: false,
 				autoplayVideos: false,
-				ytControls: 1,				// Whether the video player controls will display (3 options: 2 [default], 1 and 0)
+				ytControls: 2,				// Whether the video player controls will display (3 options: 2 [default], 1 and 0)
 				ytShowInfo: 1,              // shows or hides the video title
 				ytAutoHide: 2,              // auto-hides the progress and player controls (3 options: 2, 1 [default] and 0)
 				ytModestBranding: 0,        // shows or hides the youtube logo

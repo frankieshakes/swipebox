@@ -69,6 +69,11 @@ afterOpen: null, // called after opening
 afterClose: function(){}, // called after closing
 loopAtEnd: false, // true will return to the first image after the last image is reached
 autoplayVideos: false // true will autoplay Youtube and Vimeo videos
+ytControls: 2 // 2 will display player controls in the player
+ytShowInfo: 1 // 1 will display display information like the video title and uploader before the video starts playing
+ytAutoHide: 2 // 2 will cause the the video progress bar to fade out while the player controls (play button, volume control, etc.) remain visible
+ytModestBranding: 0 // 0 will display a YouTube logo in the player's control bar
+ytRel: 1 // 1 will show related videos when playback of the initial video ends
 ```
 
 ###Pull Requests
